@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-//When user enter wrong choise then  this fuction is call
+//When user enter wrong choice then  this fuction is call
 void lose(int rc){
 cout<<"                                --- ";
 cout<<"You lose the game !!"<<" ---"<<endl;
@@ -19,8 +19,8 @@ cout<<endl<<"                                    ";
 cout<<"Lets start the game !"<<endl<<endl;
 
 //Main logic 
-int rc;//for right choise
-int uc;//for user choise
+int rc;//for right choice
+int uc;//for user choice
 int it;//for iteration
 int oddeven=1;
 
@@ -35,13 +35,13 @@ for(int i=1;i<=10;i++){
             if(oddeven %2 ==0){
                 goto even;
             }
-            cout<<"Computer choise : "<<rc<<endl;
+            cout<<"Computer choice : "<<rc<<endl;
             it++; oddeven++;
             if(it>i){
                 break;
             }
             even:
-            cout<<"Your choise : ";
+            cout<<"Your choice : ";
             cin>>uc;
             it++; oddeven++;
             if(uc!=rc){
